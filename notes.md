@@ -41,11 +41,12 @@ you know it'll separate again, and immediately,
 if you dare to take your eyes off of it for even a second.
 
 wipe the sweat from your brow.
-apply your favorite raspberry jam to the other burnt crunchy slice of disaster bread.
+apply your favorite raspberry jam to the other burnt crispy slice of disaster bread.
 hopefully the jar isnt too sticky from the other great apes you share a fridge with.
 
 put the halves together.
-enjoy.
+remind yourself that some sandwiches do crunch.
+try to enjoy.
 
 
 
