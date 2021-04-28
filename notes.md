@@ -4,12 +4,53 @@
 
 
 
+would like to make a random color generator/factory/class to assign to blobs
+    they would need to be enumerated
+
+color1 = (random(0-255), random(0-255), random(0,255))
+color2 = etc.
+color3
+col
+co
+"
+
+would like to use these random colors in generation of blobs
+would like blobs to be enumerated
+and added to a list or group of blobs
+
+
+use this list to call blobs in main function
+
+
+
+def main()
+    all_blobs_list [blob1, blob2, blob3, etc]
+
+
+
+somehow get randomly generated colorful blobs into starting blobs section
+function with random number of blobs range (10-30)
+
+perhaps move starting blobs call into function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 making the perfect almond butter and jam sandwich
-
-        a recipe
-
-
+      a recipe
 
 
 first gather your materials, a plate, some cutlery, toaster, bread, jam, and almond butter. you'll want the type of fancy almond butter that separates and requires mixing.  you'll want this because its natural, organic, expensive, and good for you. 
