@@ -3,6 +3,8 @@
 
 import pygame
 import random
+import scratch
+from random import randrange
 from blob import Blob
 
 STARTING_COLOR1_BLOBS = 20
@@ -36,21 +38,41 @@ def draw_environment(blob_list):
     pygame.display.update()
     
 
+#generate random colors
+def generate_color(self):
+    r = random.randrange(255)
+    g = random.randrange(225)
+    b = random.randrange(225)
+    return (r, g, b)
+
+#def color_list(blob)
+    #generate list of 5 
+#loop 
+
+
+
 def main():
-    color1_blobs = dict(enumerate([Blob(COLOR1, WIDTH, HEIGHT) for i in range(STARTING_COLOR1_BLOBS)]))
-    color2_blobs = dict(enumerate([Blob(COLOR2, WIDTH, HEIGHT) for i in range(STARTING_COLOR2_BLOBS)]))
-    color3_blobs = dict(enumerate([Blob(COLOR3, WIDTH, HEIGHT) for i in range(STARTING_COLOR3_BLOBS)]))
-    color4_blobs = dict(enumerate([Blob(COLOR4, WIDTH, HEIGHT) for i in range(STARTING_COLOR4_BLOBS)]))
-    color5_blobs = dict(enumerate([Blob(COLOR5, WIDTH, HEIGHT) for i in range(STARTING_COLOR5_BLOBS)]))
+    color_list = scratch.color_list()
+    for color in color_list:
+        color1_blobs = dict(enumerate([Blob(color, WIDTH, HEIGHT) for i in range(STARTING_COLOR1_BLOBS)]))
+    # color2_blobs = dict(enumerate([Blob(color, WIDTH, HEIGHT) for i in range(STARTING_COLOR2_BLOBS)]))
+    # color3_blobs = dict(enumerate([Blob(color, HEIGHT) for i in range(STARTING_COLOR3_BLOBS)]))
+    # color4_blobs = dict(enumerate([Blob(WIDTH, HEIGHT) for i in range(STARTING_COLOR4_BLOBS)]))
+    # color5_blobs = dict(enumerate([Blob(WIDTH, HEIGHT) for i in range(STARTING_COLOR5_BLOBS)]))
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 quit()
-        draw_environment([color1_blobs, color2_blobs, color3_blobs, color4_blobs, color5_blobs])
+        draw_environment([color1_blobs]) 
         clock.tick(60)
+
+
+
+        
 
 if __name__ == '__main__':
     while True:    
 
         main()
+

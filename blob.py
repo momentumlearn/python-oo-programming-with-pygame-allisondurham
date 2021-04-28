@@ -24,3 +24,19 @@ class Blob:
         
         if self.y < 0: self.y = 0
         elif self.y > self.y_boundary: self.y = self.y_boundary
+
+    def generate_color(self):
+        r = random.randrange(255)
+        g = random.randrange(225)
+        b = random.randrange(225)
+        return (r, g, b)
+
+    def color_list():
+        color_bank = []
+        for i in range(5):
+            color_bank.append(generate_color())
+        return color_bank
+    
+    def color_choice():
+        return random.choice(color_bank)
+
