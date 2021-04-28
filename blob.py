@@ -3,7 +3,7 @@ import random
 
 class Blob:
 
-    def __init__(self, color, x_boundary, y_boundary, size_range=(4,8), movement_range=(-1,2)):
+    def __init__(self, color, x_boundary, y_boundary, size_range=(4, 14), movement_range=(-1, 2)):
         self.size = random.randrange(size_range[0],size_range[1])
         self.color = color
         self.x_boundary = x_boundary
